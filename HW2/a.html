@@ -1,0 +1,828 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<!-- saved from url=(0039)https://www3.cs.stonybrook.edu/~cse352/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="GENERATOR" content="Mozilla/4.79 [en] (X11; U; SunOS 5.6
+      sun4u) [Netscape]">
+    <title>CSE352 ARTIFICIAL INTELLIGENCE</title>
+  </head>
+  <body style="color: rgb(0, 0, 0); background-color: rgb(255, 255,
+    255);" link="#0000ee" vlink="#551a8b" text="#000000" bgcolor="#ff0000" alink="#ff0000">
+    <br>
+    <br>
+    <h1> CSE352 <br>
+      ARTIFICIAL INTELLIGENCE <br>
+      FALL 2019</h1>
+    <hr align="left" width="92%"> <br>
+    <a name="info"></a>
+    <h2>Course Information</h2>
+    <h3><font color="red"> News:&nbsp; <br>
+      </font></h3>
+    <font color="#ff0000">First class TUESDAY, August 27</font><br>
+    <p><b><font color="#ff0000"><font color="#3333ff"><font color="#000000">TESTS and Quizzes POLICY</font><br>
+            <br>
+          </font> <font color="#000000">We do not give</font>
+          make-ups&nbsp;<font color="#000000"> except of</font>
+          documented <font color="#000000">cases of illness</font> or
+          documented <font color="#000000">emergencies</font><br>
+        </font></b></p>
+    <p><b><font color="#ff0000">&nbsp;All GRADES are&nbsp; listed on <font color="#000000">BLACKBOARD</font><br>
+        </font></b>Contact TAs if you need more information or need to
+      talk about grading<br>
+      &nbsp; We&nbsp; will list names&nbsp; who is correcting which test
+      when you take them<b><font color="#ff0000"><br>
+          <br>
+          <br>
+        </font></b></p>
+    <h3>Time:&nbsp; <small><font color="#3333ff">Tuesday,&nbsp;
+          Thursday &nbsp; 2:30 - 3:50 pm</font></small> </h3>
+    <h3>Place:<font color="#ff0000"> <small>JAVITS 111</small></font><br>
+    </h3>
+    <big><b>&nbsp;Professor</b>: </big>&nbsp; <b><a href="http://www.cs.stonybrook.edu/~anita">Anita Wasilewska</a></b>
+    <p><big>208 NCS Building <br>
+      </big>Phone: 632-8458 <br>
+      e-mail: <a href="mailto:anita@cs.sunysb.edu">anitaatcs.stonybrook.edu</a>&nbsp;</p>
+    <p> <b>Office Hours: </b><br>
+      <font color="red">Tuesday, Thursday&nbsp; 4:30 pm - 6:00 pm,&nbsp;
+        and&nbsp; by appointment </font></p>
+    <h4><font size="+1">Teaching Assistants</font></h4>
+    <font color="#ff0000">ALL GRADES are listed on BLACKBOARD</font> <br>
+    Contact <font color="#ff0000">TAs </font>if you need more
+    information or need to talk about <font color="#ff0000">grading </font><br>
+    We will list names who is correcting which&nbsp; part of the test
+    when you take them <font color="#ff0000"><b><font color="#3333ff"><br>
+          <br>
+          We have very good TAs - please e-mail them, go to see them
+          anytime&nbsp; you need help<br>
+        </font></b> </font>
+    <h3><small><font color="#ff0000">TA:</font>&nbsp;</small> </h3>
+    e-mail:&nbsp; <br>
+    Office Hours: <br>
+    Office Location: &nbsp; 2217 Old CS Building
+    <h3><small><font color="#ff0000">TA:&nbsp;</font></small> </h3>
+    e-mail:&nbsp; <br>
+    Office Hours: <br>
+    Office Location: &nbsp; 2217 Old CS Building<br>
+    <h3><small><font color="#ff0000">TA:&nbsp;</font></small> </h3>
+    e-mail: <br>
+    Office Hours: <br>
+    Office Location: &nbsp; 2217 Old CS Building<br>
+    <p><br>
+    </p>
+    <h3> <font color="#ff0000"> General Course Description </font></h3>
+    Artificial Intelligence is a broad and well established field and AI
+    textbooks seem to be getting longer and longer and and often
+    narrowly specialized. Our course attempts t to provide a concise and
+    accessible introduction to the field. It is designed to give a
+    broad, yet in-depth overview of different fields of AI. We will
+    examine the most recognized techniques and algorithms in a rigorous
+    detail. We will also explore trends, areas, and developments of the
+    field in form of lectures based on newest research and applications.
+    <h3> <font color="#ff0000">Book1</font></h3>
+    <p><b>The Essence of Artificial Intelligence <br>
+        Allison Cawsey <br>
+        Prentice Hall, 1998 </b></p>
+    <br>
+    This is a short, not expensive book but not very technical. <br>
+    We will cover in detail first 3 chapters&nbsp; and Chapter 5
+    supplemented by the&nbsp; Lecture Notes for technical details) <br>
+    The chapter 7&nbsp; is supplemented by the <b><font color="#ff0000">Book
+
+
+
+
+
+
+
+
+
+
+
+        2<br>
+        <br>
+      </font></b> Course LECTURE NOTES posted in Downloads EXTEND&nbsp;
+    the material from the book providing TECHNICAL details and are the
+    MAJOR SOURCE for the course. <b>
+      <h3><font color="#ff0000">Book 2</font><br>
+      </h3>
+      <p><b>DATA MINING Concepts and Techniques </b><b><br>
+        </b><b> Jiawei Han, Micheline Kamber </b><b><br>
+        </b><b> Morgan Kaufman Publishers, 2011 </b> <b><font color="red"><font color="red"><font color="#330033"><b><br>
+                  Third Edition<br>
+                </b></font></font></font></b></p>
+    </b> <font color="#ff0000"><br>
+      Data Mining </font>(DM) now also called also BIG DATA is a&nbsp;
+    multidisciplinary field. <br>
+    It brings together research and ideas from database technology, <font color="#ff0000">machine learning, neural networks, statistics,
+      pattern recognition,&nbsp; </font>knowledge based systems,
+    information retrieval, high-performance computing, and data
+    visualization.<br>
+    &nbsp;Its main focus is the <font color="#ff0000">automated
+      extraction of patterns </font>representing <font color="#ff0000">knowledge
+
+
+
+
+
+
+      implicitly stored</font> in large databases, <br>
+    data warehouses, and other massive information repositories. <br>
+    <br>
+    <b>Lectures 7-20&nbsp;&nbsp; </b> cover parts or all of the <font color="#ff0000">Machine Learning Algorithms</font> included
+    in&nbsp; <font color="#ff0000">CHAPTERS 6, 7</font> and <font color="#ff0000"> CHAPTERS 8, 9 </font><br>
+    of the <font color="#ff0000"><b>Book 2<br>
+        <br>
+      </b></font> Do not need to buy the book. You can download detailed
+    slides for Third Edition at&nbsp; <a href="https://hanj.cs.illinois.edu/bk3/bk3_slidesindex.htm"> DM
+      SLIDES</a> <br>
+    <br>
+    The course outcomes and catalog description are in the <a href="http://www.cs.sunysb.edu/undergrad/cse_courses/cse352.html">official
+
+course
+
+
+
+
+
+
+
+      description</a> page
+    <h3><font color="red"> Student Information </font></h3>
+    Students ATTENDANCE is the most important, as Lecture Notes serve as
+    an extra textbook for the course and students presentations are
+    integral and as important part of the course design as Professor's
+    lecture.<br>
+    <br>
+    <h3> <font color="red"> AI talks in the Department</font></h3>
+    tba
+    <h3>Grading<br>
+    </h3>
+    During the semester you have to complete the following <b><br>
+    </b><font color="#3333ff"><font color="#ff0000">TWO QUIZZES&nbsp;</font>
+    </font>-&nbsp; given in class, 15pts each -&nbsp; TOTAL <font color="#ff0000"><b>30pts</b> </font><b><font color="#ff0000"><br>
+        <font color="#3333ff">No make-ups<br>
+          <br>
+        </font></font></b> <font color="red">MIDTERM&nbsp; <b>65pts&nbsp;</b>&nbsp;</font>
+    given in class<b> </b><font color="#ff0000">&nbsp; <br>
+      <br>
+    </font><font color="#ff0000"><font color="#3333ff"><font color="#ff0000">PROJECT</font> </font></font>(it is&nbsp; an
+    application project- not programming)&nbsp; - <b><font color="#ff0000">40 pts</font></b> <br>
+    &nbsp;See the section PROJECT below and Project Description in the
+    Syllabus<b> <br>
+    </b>It is a <font color="#ff0000">TEAM project</font> - see the
+    Team Formation section for explanation<br>
+    <br>
+    <font color="red">FINAL&nbsp; <b>65pts <br>
+      </b></font><b><font color="red">&nbsp;</font> <br>
+      <font color="red"> </font></b><font color="red">Extra Credit</font><br>
+    You can earn up to <font color="red">10 pts </font> of extra
+    credit points during the semester<br>
+    <br>
+    <b>Homeworks</b><br>
+    I posted 4 Homework Assignments AND Homework Solutions <br>
+    <font color="#ff0000"><font color="#3333ff">NONE will be collected
+        nor graded- they are posted for you do study from them</font><br>
+    </font> I encourage students to SOLVE homework problems first- and
+    then to compare their solutions with those posted Quizzes and TESTS
+    will contain problems very similar to the Homework Problems <br>
+    <font color="#3333ff">I will be posting some additional HMKs during
+      the semester</font><br>
+    <h3>Final Grade Computation </h3>
+    <font color="#3333ff">NONE OF THE GRADES WILL BE CURVED</font> <br>
+    <br>
+    During the semester you can earn <font color="red">200pts </font>
+    plus <font color="red"> extra credit pts </font> <br>
+    The grade will be determined in the following way: <font color="red"> number of earned points divided by 2 = % grade</font><br>
+    The <font color="#ff0000">% grade </font>is translated into a <font color="red">letter grade </font> in a standard way&nbsp; i.e. <br>
+    <br>
+    <font color="#000000">100 - 90 % is <font color="#ff0000">A range</font>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+      89 - 80 % is <font color="#ff0000">B range</font>, <br>
+      <br>
+    </font> <font color="#000000">79 - 70 % is <font color="#ff0000">C
+        range</font>,&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 69 - 60 %
+      is <font color="#ff0000">D range</font>, <br>
+      <br>
+      and F is below <font color="#ff0000">60%</font><br>
+      &nbsp;</font><br>
+    <font color="RED"> See course <font color="#3333ff">SYLLABUS</font>
+      for details&nbsp; </font> <br>
+    <font size="+1" color="#ff0000"><b><br>
+      </b></font><b><font size="+1" color="#ff0000">Tests Schedule</font>
+    </b><br>
+    It is a preliminary schedule; <b>changes</b>, if needed will be
+    advertised in&nbsp;<b> <font color="#ff0000">News</font></b><br>
+    <br>
+    <font color="#ff0000"><b>Q1&nbsp;</b>&nbsp;</font> Thursday,&nbsp; <font color="#ff0000">October 10<br>
+      <font color="#000000"><b>Fall Break</b> &nbsp;</font> October 14
+      -15<br>
+    </font> <font color="red"><b>MIDTERM </b>&nbsp;&nbsp;</font>
+    Thursday,&nbsp; <font color="red">November 7<br>
+    </font><font color="#ff0000"><b>Project</b> <b>Data</b> Preparation</font>
+    (5 extra points) <br>
+    Submit it via Blackboard any day <b>before</b> Thursday, <font color="#ff0000">November 14</font><br>
+    <b>&nbsp;</b><font color="#3333ff"><b><font color="#000000">Thanksgiving
+
+
+
+
+
+
+
+
+
+
+          Break&nbsp;</font></b><b>&nbsp;</b> &nbsp; November 21-25</font><br>
+    <font color="red"><b>PROJECT&nbsp;&nbsp; </b><font color="#000000">submitt&nbsp;&nbsp;
+
+
+
+
+
+
+        it via&nbsp; Blackbord&nbsp; </font></font><font color="red"><font color="#000000">any day before&nbsp; Tuesday,</font>&nbsp; <font color="red">November 21</font><br>
+      <b>Q2 </b></font><b>&nbsp;</b>&nbsp; Tuesday,&nbsp;&nbsp;<font color="red">December 3<br>
+      <b>&nbsp;FINAL</b>&nbsp;&nbsp; </font> given during Finals Time
+    December 11-19<br>
+    <h3>PROJECT</h3>
+    Play around with the <font color="#3333ff"><b>PROJECT DATA</b></font>
+    and familiarize yourself with it (DOWNLOAD: <a href="https://www3.cs.stonybrook.edu/~cse352/bakarydata.xls">bakarydata.xl </a> ) <br>
+    <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/19projectAI.pdf">Project Description<br>
+    </a> Write a detailed&nbsp; <b>Project Report </b> explaining all
+    methods used, motivations,&nbsp; experiments results and their&nbsp;
+    comparison&nbsp; Submitt it via Blackboard <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/hmkproject.pdf"> Project Data Preparation Description </a><br>
+    (for extra credit)<br>
+    <h3>Project Tools</h3>
+    <a href="http://www.cs.waikato.ac.nz/~ml/weka/index.html">WEKA</a>
+    <br>
+    <a href="http://rapid-i.com/content/blogsection/7/82/lang,en/">RapidMiner</a><br>
+    &nbsp;<br>
+    <b>ATTENTION</b>&nbsp; <br>
+    <b><font color="red">Project</font></b><b> </b>has to be to be
+    conducted in <font color="red"> <b>Teams</b></font>&nbsp; of&nbsp;
+    <b>3 - 4 students<br>
+    </b><b>All members of the Team receive the same grade <br>
+      <br>
+    </b> &nbsp;<b>TEAMS FORMATION</b><br>
+    <br>
+    Please<b><font color="#3333ff"> e-mail TA</font></b>&nbsp;&nbsp;<font color="red">
+      <meta name="Title" content="">
+      <b>t.b.a&nbsp;</b> </font>names and e-mails of your <font color="#ff0000">Team members </font>denoting&nbsp; who is the
+    designated <font color="#ff0000"> Team Leader</font><br>
+    <b><font color="#3333ff">TA </font></b>will assign a <font color="#ff0000">Team Number </font>to each team and e- mail it to
+    each&nbsp; <font color="#ff0000">Team Leader</font> &nbsp; to be
+    used for future correspondence. <br>
+    <br>
+    <b>Contact&nbsp;</b> <b><font color="#3333ff">TA&nbsp;</font></b>
+    if you do not HAVE a team partner. <b>He will help you to FORM A
+      TEAM</b><br>
+    &nbsp;All this has to be done&nbsp; by<font color="#ff0000">
+      November 10&nbsp;</font> as&nbsp; <font color="red"><b><font color="#3333ff"><font color="#000000">the </font>PROJECT</font>&nbsp;<font color="#000000"> is &nbsp; due&nbsp; </font>November 21<br>
+        &nbsp; </b></font><br>
+    <h3><font color="red">DOWNLOADS</font></h3>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/syllabus19.pdf">Syllabus</a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/syllslides19.pdf">Course Syllabus Slides</a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/19projectslides.pdf"> Project Description Slides</a> <br>
+    <h3><font color="red">HANDOUTS</font></h3>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/busse.pdf"> BUSSE HANDOUT for Rules Based Systems</a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/nilssonRes.pdf"> Resolution HANDOUT </a><br>
+    &nbsp;<a href="https://www3.cs.stonybrook.edu/~cse352/DTAlg.pdf">Decision Tree and NN Algorithms HANDOUT</a>
+    <br>
+    <br>
+    <br>
+    <h3>Homeworks <br>
+    </h3>
+    <p><font color="#ff0000">NONE of Homeworks will be collected nor
+        graded- they are posted for you do study from them</font></p>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/hmk1.pdf"> Homework 1 </a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/hmkResol.pdf"> RESOLUTION Homework </a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/hmk2.pdf"> Homework 2 </a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/17hmk3.pdf"> Homework 3 </a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/16hmk4.pdf"> Homework 4 </a><br>
+    <h3> Homeworks Solutions </h3>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/hmk1sol.pdf">Homework 1 Solutions</a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/hmkResolsol.pdf"> RESOLUTION Homework Solutions </a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/hmk2sol.pdf"> Homework 2 Solutions </a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/17hmk3sol.pdf"> Homework 3 Solutions </a> <br>
+    <br>
+    <h3>&nbsp;<font color="red">Lecture Notes:</font></h3>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/L1introduction%28ch1%29.pdf">Lecture 1: Chapter 1;
+      Introduction to AI </a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/L2knowledge%28ch2%29.pdf">Lecture 2: Chapter 2; Knowledge
+      Representation </a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/L3predicatelogic%28ch2%29.pdf">Lecture 3: Chapter 2;
+      Predicate Logic Part 1</a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/18LangSlides.pdf">Lecture 4: LOGIC REVIEW </a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/L4rulebasedsystems1.pdf">Lecture 5: Chapters 2, 3, 4, Busse
+      Notes: Rule Based Systems </a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/L5rewiew.pdf">Lecture 5a: REVIEW for Hmk 1 </a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/18Resolution.pdf">Lecture 6: RESOLUTION </a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/L6introductionlearning.pdf"> Lecture 7: Chapter 7;
+      Introduction to Learning </a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/L6classification1.pdf">Lecture 8: Classification, Part 1:
+      Introduction </a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/L7classification2.pdf">Lecture 9: Classification Part 2:
+      Testing Classifier Accuracy </a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/L8DTIntro.pdf">Lecture 10: Decision Tree BASIC Algoirithm,
+      Examples </a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/L9preprocess.pdf">Lecture 11: Preprocessing </a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/L10DTalg.pdf"> </a><a href="https://www3.cs.stonybrook.edu/~cse352/L10DTalg.pdf">Lecture 12:
+      Decision Tree Full Algorithm</a> <a href="https://www3.cs.stonybrook.edu/~cse352/L10DTalg.pdf"> </a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/L12NN.pdf">Lecture 13: Neural Networks </a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/16L13ClassReview.pdf">Lecture 14: Classification Review </a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/16L14association.pdf">Lecture 15: Association- Apriori
+      Algorithm</a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/16L15classbyassoc.pdf">Lecture 16: Classification by
+      Association</a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/16L16GeneticAlgorithms.pdf">Lecture 17: Genetic Algorithms
+    </a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/16L17GAexamples.pdf">Lecture 18: Genetic Algorithms
+      Examples</a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/17L18clustering.pdf">Lecture 19: Clustering</a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/bayes08.pdf"> Lecture 20: Bayesian Classification </a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/L15ResolutionPart1.pdf"> Resolution (old)</a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/L17ResolutionPart3.pdf">Resolution Strategies (old)</a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/L18predlogic%282%29.pdf">Predicate Logic, Part 2</a> <br>
+    <br>
+    <h3> Extra Lectures - Presentations</h3>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/19Bayes.pdf"> Bayes 1</a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/19Bayes2.pdf"> Bayes 2</a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/19DataWarehouse"> Data Warehouse </a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/19GAlgApplications.pdf"> Genetic Algorithms Applications</a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/19ImageClassification.pdf">Image Classification </a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/19LangModels.pdf"> NLP Models</a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/NLProcessing.pdf"> Natural Language Processing </a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/19OpinionMining.pdf"> Opinion Mining</a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/19Clustering.pdf"> Clustering 1</a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/19Clustering2.pdf"> Clustering 2 </a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/19Regresion.pdf"> Regression 1</a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/19Regression2.pdf"> Regression 2</a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/19Regression3.pdf"> Regression 3</a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/19TextMining.pdf"> Text Mining 1</a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/19TextMining2.pdf"> Text Mining 2</a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/19WebMining.pdf"> Web Mining 1</a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/19WebMining2.pdf"> Web Mining 2</a><br>
+    <h3> Past Students Presentations</h3>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/team5.pdf">Games and AI</a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/team6.pdf">Applications of GA in AI</a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/team13.pdf">AI in Tabletop Games</a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/team1.pdf">AI within FINANCE </a><br>
+    &nbsp;<a href="https://www3.cs.stonybrook.edu/~cse352/team2.pdf">AI in MUSIC</a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/team15.pdf">AI and Neural Networks</a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/team3.pdf">AI in Video Games&nbsp;</a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/team14.pdf">AI in Self-driving Cars </a><br>
+    &nbsp;<a href="https://www3.cs.stonybrook.edu/~cse352/team16.pdf">AI in Pattern Recognition</a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/team11.pdf">AI for Children</a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/team9.pdf">AI in Facial Recognition</a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/T9talk.pdf"> Pattern Recognition</a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/T10talk.pdf">Sci-Fic Film Short Circuit</a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/T12talk.pdf"> Google Deep Dream</a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/T13talk.pdf"> AI in Voice and Image Recognition</a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/T2talk.pdf"> Self Driving Cars </a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/T4talk.pdf"> AI History</a><br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/T15talk.pdf"> AI in Games</a> <br>
+    <a href="https://www3.cs.stonybrook.edu/~cse352/T3talk.pdf"> Sound Recognition</a> <br>
+    <h3>ACADEMIC INTEGRITY STATEMENT </h3>
+    Each student must pursue his or her academic goals honestly and be
+    personally accountable for all submitted work. Representing another
+    person's work as your own is always wrong. Any suspected instance of
+    academic dishonesty will be reported to the Academic Judiciary. For
+    more comprehensive information on academic integrity, including
+    categories of academic dishonesty, please refer to the academic
+    judiciary website at <b><a href="http://www.stonybrook.edu/uaa/academicjudiciary/">Academic
+        Judiciary Website</a></b> <br>
+    <h3>Stony Brook University Syllabus Statement </h3>
+    If you have a physical, psychological, medical, or learning
+    disability that may impact your course work, please contact
+    Disability Support Services at (631) 632-6748 or <b><a href="http://http//studentaffairs.stonybrook.edu/dss/">Disability
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Support ServicesWebsite</a></b> They will determine with you
+    what accommodations are necessary and appropriate. All information
+    and documentation is confidential. Students who require assistance
+    during emergency evacuation are encouraged to discuss their needs
+    with their professors and Disability Support Services. For
+    procedures and information go to the following website: <b><a href="http://www.sunysb.edu/ehs/fire/disabilities.shtml/">Disability
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Support Services Website</a></b> <font color="#3333ff"> </font><font color="#3333ff"><font color="#3333ff"> </font></font><font color="#3333ff"> </font><font color="#3333ff"> </font>
+  
+
+</body></html>
